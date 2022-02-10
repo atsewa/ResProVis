@@ -1,5 +1,4 @@
 <?php
-add_action('woocommerce_product_options_general_product_data', 'Resprovis_CustomSlots_Input_Fields');
 function Resprovis_CustomSlots_Input_Fields()
 {
     // Declaring all the global and local vriables
@@ -80,3 +79,5 @@ function woocommerce_process_product_meta_fields_save($post_id)
         }
     }
 }
+
+ ?>

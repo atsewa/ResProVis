@@ -1,5 +1,4 @@
 <?php
-add_action('pre_get_posts', 'custom_pre_get_posts_query');
 // Sql query for fetching the post id for filtering the woocommerce products.......!!
 function custom_pre_get_posts_query($q)
 {
@@ -25,7 +24,7 @@ function custom_pre_get_posts_query($q)
          array_push($arr_pids, $array->ID);
       }
 
-      
+
       //print_r( $arr_pids);
       $q->set('post__not_in', $arr_pids);
 
@@ -33,3 +32,5 @@ function custom_pre_get_posts_query($q)
 
    }
 }
+
+ ?>

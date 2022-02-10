@@ -26,9 +26,11 @@ if (!defined('ABSPATH')) {
 define('RESPROVIS_TEXTDOMAIN', 'resprovis');
 define('RESPROVIS_DIR', plugin_dir_url(__FILE__));
 // Including all dependent files of the resprovis.php
-include("resprovis-lite_database.php");
-include_once("resprovis-lite_slotindex.php");
-include_once("resprovis-lite_productfiltration.php");
+include("resprovis-database.php");
+include_once("weekdays_filtaration.php");
+include_once("weekdays_allocation.php");
+include_once("resprovis-shoppage_productfiltration.php");
+include_once("resprovis-slots_allocation.php");
 
 
 // Calling wordpress activation hook for creating plugin tables in database when the plugin get installed.
