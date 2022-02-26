@@ -4,7 +4,7 @@
 global $jal_db_version;
 $jal_db_version = '1.0';
 
-function weekdays()
+function resprovis_weekdays()
 {
     global $wpdb;
     global $jal_db_version;
@@ -24,7 +24,7 @@ function weekdays()
     }
 }
 //  Code under this section for inserting weeday data on plugin installation in weekdays table
-function weekdays_data()
+function resprovis_weekdays_data()
 {
     global $wpdb;
     $table_name = $wpdb->prefix . 'asp_weekdays';
@@ -79,7 +79,7 @@ function weekdays_data()
     );
 }
 //  Weekdays Allocation
-function weekdays_alloc()
+function resprovis_weekdays_alloc()
 {
     global $wpdb;
     global $jal_db_version;

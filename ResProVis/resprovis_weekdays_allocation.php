@@ -1,5 +1,5 @@
 <?php
-function Resprovis_CustomSlots_Input_Fields()
+function resprovis_CustomSlots_Input_Fields()
 {
     // Declaring all the global and local vriables
     global $post;
@@ -39,8 +39,8 @@ function Resprovis_CustomSlots_Input_Fields()
 // Code under this section perform the insertion of the slot allocation in the database !!
 // code for inserting the value of timeslot !!
 
-add_action('woocommerce_process_product_meta', 'woocommerce_process_product_meta_fields_save');
-function woocommerce_process_product_meta_fields_save($post_id)
+add_action('woocommerce_process_product_meta', 'resprovis_process_product_meta_fields_save');
+function resprovis_process_product_meta_fields_save($post_id)
 {
     $product_id = $post_id;
     global $post;

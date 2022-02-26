@@ -1,6 +1,6 @@
 <?php
 // Sql query for fetching the post id for filtering the woocommerce products.......!!
-function custom_pre_get_posts_query($q)
+function resprovis_custom_pre_get_posts_query($q)
 {
    $varDate = date('Y-m-d', current_time('timestamp', 0));
    $varTime = date('H:i:s', current_time('timestamp', 0));
